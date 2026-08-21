@@ -1,0 +1,15 @@
+{
+  "contract_version": "1.0",
+  "page": "GGK SKY landing page",
+  "note": "Declares the top-level information architecture and section order of the landing page. Validated against the committed demo by scripts/validate_assets.py.",
+  "sections": [
+    { "nav": 0, "id": "sec-features", "nav_label_key": "nav_features", "role": "functional scenarios" },
+    { "nav": 1, "id": "sec-product",   "nav_label_key": "nav_product",  "role": "product capabilities" },
+    { "nav": 2, "id": "sec-audience",  "nav_label_key": "nav_audience", "role": "audience" },
+    { "nav": 3, "id": "sec-pricing",   "nav_label_key": "nav_pricing",  "role": "pricing" }
+  ],
+  "closing_section": "ggk-cta-section",
+  "expected_nav_count": 4,
+  "scene_demos": ["scene1-demo", "scene2-demo"],
+  "pricing_tiers": ["ggk-price-free", "ggk-price-monthly", "ggk-price-yearly"]
+}

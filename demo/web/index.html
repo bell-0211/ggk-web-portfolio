@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>你的全能AI小助手——GGK SKY</title>
+<link rel="icon" href="assets/img/logo1-1.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/scene1.css" />
+<link rel="stylesheet" href="assets/css/scene2.css" />
+<link rel="stylesheet" href="assets/css/ggk-cta-base.css" />
+<link rel="stylesheet" href="assets/css/ggk-cta-fx.css" />
+<link rel="stylesheet" href="assets/css/ggk-footer.css" />
+<link rel="stylesheet" href="assets/css/ggk-nav-patch.css" />
+  <link rel="stylesheet" href="assets/css/ggk-product-grid-patch.css" />
+  <link rel="stylesheet" href="assets/css/style-pricing-v3-patch.css" />
+</head>
+<body>
+<div class="page">
+  <div class="star-field" id="starField"></div>
+  <canvas id="hero-3d" aria-hidden="true"></canvas>
+  <div class="hero-mesh"></div>
+
+  <div class="watermark-wrap">
+    <span class="watermark-text">GGK SKY</span>
+  </div>
+
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="assets/img/logo2-1.png" alt="GGK Logo" />
+    </div>
+    <nav class="navbar-nav">
+      <a href="#sec-features" data-nav="0"><span data-i18n="nav_features">功能场景</span><span class="underline"></span></a>
+      <a href="#sec-product" data-nav="1"><span data-i18n="nav_product">产品特点</span><span class="underline"></span></a>
+      <a href="#sec-audience" data-nav="2"><span data-i18n="nav_audience">适用人群</span><span class="underline"></span></a>
+      <a href="#sec-pricing" data-nav="3"><span data-i18n="nav_pricing">定价情况</span><span class="underline"></span></a>
+    </nav>
+    <div class="navbar-right">
+      <div class="lang-toggle">
+        <span class="active">中文</span>
+        <span class="inactive">EN</span>
+      </div>
+      <button class="cta-btn" data-i18n="nav_cta">立即体验</button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="breadcrumb">
+      <span class="bc-item" data-i18n="hero_phone">手机</span><span class="dot">&middot;</span>
+      <span class="bc-item" data-i18n="hero_pc">电脑</span><span class="dot">&middot;</span>
+      <span class="bc-item bc-action bc-action-link" data-i18n="hero_connect">连接</span><span class="dot">&middot;</span>
+      <span class="bc-item bc-action bc-action-collab" data-i18n="hero_collab">协同</span>
+    </div>
+    <h1 class="hero-title" data-reveal="lift">
+      <span class="reveal-word" data-i18n="hero_title_prefix">你的</span><span class="gradient-text reveal-word reveal-accent" data-i18n="hero_title_highlight">全能AI</span><span class="reveal-word" data-i18n="hero_title_suffix">小助手</span>
+    </h1>
+    <p class="subtext">
+      <span class="sub-main" data-i18n="hero_sub_main">把电脑搬进手机，随时随地远程办公。</span>
+      <span class="sub-support">
+        <span data-i18n="hero_sub_support">扫码即连，</span><span class="hl-cmd" data-i18n="hero_sub_cmd1">手机一句话，</span><span class="hl-cmd" data-i18n="hero_sub_cmd2">电脑跑命令。</span>
+      </span>
+      <span class="sub-brand"><span class="ggk-accent">GGK</span><span data-i18n="hero_sub_brand">，让你的工作全搞定。</span></span>
+    </p>
+    <div class="cta-group">
+      <button class="cta-primary" data-i18n="hero_cta_primary">立即体验</button>
+      <button class="cta-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span data-i18n="hero_cta_secondary">观看演示</span>
+      </button>
+    </div>
+    <div class="feature-pills">
+      <span class="fp-item">
+        <i class="fp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z M17 17h4 M14 20h3 M20 14v3 M20 20v1"/></svg></i>
+        <span data-i18n="hero_pill_scan">扫码连接</span>
+      </span>
+      <span class="fp-item">
+        <i class="fp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></i>
+        <span data-i18n="hero_pill_remote">远程桌面</span>
+      </span>
+      <span class="fp-item">
+        <i class="fp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></i>
+        <span data-i18n="hero_pill_file">文件传输</span>
+      </span>
+      <span class="fp-item">
+        <i class="fp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></i>
+        <span data-i18n="hero_pill_cmd">远程指令</span>
+      </span>
+    </div>
+    <div class="social-proof">
+      <div class="avatars">
+        <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop" alt="用户头像" loading="lazy">
+        <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop" alt="用户头像" loading="lazy">
+        <img class="avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=120&auto=format&fit=crop" alt="用户头像" loading="lazy">
+        <img class="avatar" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=120&auto=format&fit=crop" alt="用户头像" loading="lazy">
+      </div>
+      <div class="social-info">
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <span class="user-count"><strong>12,000+</strong> <span data-i18n="hero_social_proof">人正在使用 GGK 提质提效</span></span>
+      </div>
+    </div>
+  <div class="planet-cyan"></div>
+  <div class="bird-character">
+    <img src="assets/img/logo1-1.png" alt="Bird" />
+  </div>
+  </main>
+</div>
+
+<!-- ════════════════ 四大功能区 ════════════════ -->
+<div class="sections-wrap">
+
+  <!-- 01 功能场景 -->
+  <section class="func-section" id="sec-features">
+    <div class="sec-features-stars" id="secFeaturesStars"></div>
+    <div class="scene-bg-fx">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <div class="bg-mesh"></div>
+
+    </div>
+    <h2 class="features-hero-title" data-i18n="sec1_title">掌中善问，端上驭控，触手即达的 AI 工位</h2>
+
+    <div class="scene-row">
+      <div class="scene-text">
+        <h3 class="scene-heading"><span data-i18n="scene1_heading">场景一</span> <span class="scene-dot">&middot;</span> <span data-i18n="scene1_heading_text">微信小程序 AI 助手</span></h3>
+        <ul class="scene-list">
+          <li data-i18n="scene1_li1">无需切换 App，打开微信扫码即唤起 AI 助手</li>
+          <li data-i18n="scene1_li2">日程会一问便知，文档与数据一句话调取</li>
+          <li data-i18n="scene1_li3">自然语言直达结果，问完即走，轻如随手翻一页备忘</li>
+        </ul>
+      </div>
+      <div class="scene-demo" id="scene1-demo">
+        <div class="s1-iphone-wrapper">
+          <div class="s1-iphone-frame">
+          <!-- 演示区灰紫蒙版：仅覆盖手机界面区域，自动演示按钮居中 -->
+          <div class="s1-demo-mask" id="s1DemoMask">
+            <button class="s1-demo-btn" data-action="toggle-demo"><span class="s1-demo-icon">&#9654;</span><span class="s1-demo-label" data-i18n="s1_demo_btn">自动演示</span></button>
+          </div>
+            <div class="s1-btn-mute"></div>
+            <div class="s1-btn-vol-up"></div>
+            <div class="s1-btn-vol-down"></div>
+            <div class="s1-btn-power"></div>
+            <div class="s1-outer-frame"></div>
+            <div class="s1-screen-bezel">
+              <div class="s1-blob-bg">
+                <div class="s1-blob-base"></div>
+                <div class="s1-blob s1-blob-tr-purple"></div>
+                <div class="s1-blob s1-blob-tl-blue"></div>
+                <div class="s1-blob s1-blob-tc-lavender"></div>
+                <div class="s1-blob s1-blob-ml-teal"></div>
+                <div class="s1-blob s1-blob-mr-bluepurple"></div>
+                <div class="s1-blob s1-blob-mc-green"></div>
+                <div class="s1-blob s1-blob-bl-purple"></div>
+                <div class="s1-blob s1-blob-br-blue"></div>
+                <div class="s1-blob s1-blob-bc-teal"></div>
+              </div>
+              <div class="s1-status-bar">
+                <span class="s1-status-time">9:41</span>
+                <div class="s1-status-icons">
+                  <svg width="17" height="12" viewBox="0 0 17 12" fill="none"><rect x="0" y="8" width="3" height="4" rx="0.8" fill="#1c1c1e"/><rect x="4.5" y="5.5" width="3" height="6.5" rx="0.8" fill="#1c1c1e"/><rect x="9" y="3" width="3" height="9" rx="0.8" fill="#1c1c1e"/><rect x="13.5" y="0" width="3" height="12" rx="0.8" fill="#1c1c1e" opacity="0.3"/></svg>
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 9.5C8.83 9.5 9.5 10.17 9.5 11S8.83 12.5 8 12.5 6.5 11.83 6.5 11 7.17 9.5 8 9.5Z" fill="#1c1c1e"/><path d="M3.5 7C5 5.17 6.9 4 8 4s3 1.17 4.5 3" stroke="#1c1c1e" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M1 4C3.2 1.5 5.5 0 8 0s4.8 1.5 7 4" stroke="#1c1c1e" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.4"/></svg>
+                  <div class="s1-battery"><div class="s1-battery-body"><div class="s1-battery-fill"></div></div><div class="s1-battery-cap"></div></div>
+                </div>
+              </div>
+              <div class="s1-dynamic-island"></div>
+              <div class="s1-top-nav">
+                <div class="s1-top-nav-left">
+                  <button class="s1-icon-btn" data-action="open-sidebar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+                  <button class="s1-icon-btn s1-new-chat-btn" data-action="new-chat" style="display:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="9.5" x2="15" y2="15.5"/><line x1="15" y1="9.5" x2="9" y2="15.5"/></svg></button>
+                </div>
+                <div class="s1-top-nav-right">
+                  <button class="s1-pill-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+                  <button class="s1-circle-btn"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#555" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" fill="#555"/></svg></button>
+                </div>
+              </div>
+              <div class="s1-white-overlay" style="display:none"></div>
+              <div class="s1-main-content">
+                <div class="s1-home-screen">
+                  <div class="s1-home-mascot"><img src="assets/img/logo3-1.png" alt="Guguke" class="s1-home-logo"/></div>
+                  <div class="s1-home-welcome">
+                    <h1 class="s1-home-title" data-i18n="s1_home_title">欢迎使用GGK SKY</h1>
+                    <p class="s1-home-desc" data-i18n="s1_home_desc">我是你的小助理，能查，能听，能说，能帮你链接开发工具。</p>
+                  </div>
+                  <div class="s1-home-spacer"></div>
+                  <div class="s1-quick-actions">
+                    <button class="s1-quick-btn" data-action="quick-action" data-i18n="s1_quick_connect">连接终端Claude</button>
+                    <button class="s1-quick-btn" data-action="quick-action" data-i18n="s1_quick_chip">查询芯片手册</button>
+                    <button class="s1-quick-btn" data-action="quick-action" data-i18n="s1_quick_token">token计量</button>
+                  </div>
+                </div>
+                <div class="s1-chat-screen" style="display:none">
+                  <div class="s1-user-bubble">
+                    <div class="s1-user-bubble-inner"><p class="s1-user-msg-text" data-i18n="s1_user_msg">你好今天的天气怎么样</p></div>
+                  </div>
+                  <div class="s1-typing-indicator" style="display:none">
+                    <div class="s1-typing-dots"><span class="s1-dot s1-dot-1"></span><span class="s1-dot s1-dot-2"></span><span class="s1-dot s1-dot-3"></span></div>
+                    <span class="s1-typing-text" data-i18n="s1_typing">等待回复...</span>
+                  </div>
+                  <div class="s1-ai-response" style="display:none">
+                    <p class="s1-ai-text" data-i18n="s1_ai_text">你好呀，今天天气得看你所在的城市，方便告诉我你在哪个城市吗？
+知道城市后我可以帮你查一下实时天气情况，包括温度、是否降雨、穿衣建议等。
+如果你不在意具体城市，也可以告诉我大致的省份或区域，我给个宽泛的判断。</p>
+                    <div class="s1-ai-actions">
+                      <button class="s1-ai-action-btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+                      <button class="s1-ai-action-btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="s1-input-bar">
+                <div class="s1-input-bird">
+                  <svg width="52" height="52" viewBox="0 0 55 55" fill="none">
+                    <ellipse cx="26" cy="10" fill="#FFD86D" rx="1.5" ry="8.7" transform="rotate(-3.8 26 10)"/>
+                    <ellipse cx="27" cy="9" fill="#F97EFF" fill-opacity="0.5" rx="1.5" ry="8.7" transform="rotate(22.3 27 9)"/>
+                    <ellipse cx="25" cy="12" fill="#3E4CC9" fill-opacity="0.66" rx="1.5" ry="8.7" transform="rotate(-15.5 25 12)"/>
+                    <path d="M15 7.6V29.6L10.3 30.3V41.2L38.9 38.8L42 8.9L15.4 7.6Z" fill="#5385C2"/>
+                    <path d="M44.7 20.2L39.2 17.8V22.5L44.7 20.2Z" fill="#FF673D"/>
+                  </svg>
+                </div>
+                <div class="s1-input-box">
+                   <input class="s1-input-field" type="text" data-i18n="s1_input_placeholder" placeholder="请输入您的问题..." />
+                  <div class="s1-input-actions">
+                    <div class="s1-input-left">
+                      <button class="s1-input-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.8" stroke-linecap="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></button>
+                      <button class="s1-input-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></button>
+                    </div>
+                    <button class="s1-send-btn s1-inactive" data-action="send">
+                      <svg class="s1-send-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                      <svg class="s1-stop-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="s1-disclaimer" data-i18n="s1_disclaimer">内容由AI生成，仅供参考</div>
+              </div>
+              <div class="s1-sidebar-overlay" style="display:none">
+                <div class="s1-sidebar-panel">
+                  <div class="s1-sidebar-inner">
+                    <div class="s1-blob-bg"><div class="s1-blob-base"></div><div class="s1-blob s1-blob-tr-purple"></div><div class="s1-blob s1-blob-tl-blue"></div></div>
+                    <div class="s1-sidebar-top-nav">
+                      <div class="s1-sidebar-nav-left">
+                        <button class="s1-icon-btn" data-action="close-sidebar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                        <button class="s1-icon-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+                      </div>
+                      <div class="s1-sidebar-nav-right">
+                        <button class="s1-pill-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+                        <button class="s1-circle-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#555" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" fill="#555"/></svg></button>
+                      </div>
+                    </div>
+                    <div class="s1-sidebar-section-title">
+                      <span data-i18n="s1_sidebar_history">对话历史</span>
+                      <button><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    </div>
+                    <div class="s1-sidebar-list">
+                      <div class="s1-sidebar-group">
+                        <button class="s1-group-header" data-action="toggle-group" data-group="knowledge">
+                          <span class="s1-group-label"><span data-i18n="s1_group_knowledge">知识咨询</span> <svg class="s1-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="s1-group-items" data-group-items="knowledge">
+                           <div class="s1-conversation-item"><span class="s1-conv-text" data-i18n="s1_conv_organize">知识整理</span><div class="s1-conv-meta"><span class="s1-conv-time">11:32</span></div></div>
+                           <div class="s1-conversation-item"><span class="s1-conv-text" data-i18n="s1_conv_learn">AI专业术语学习</span><div class="s1-conv-meta"><span class="s1-conv-time">11:32</span></div></div>
+                        </div>
+                      </div>
+                      <div class="s1-sidebar-group">
+                        <button class="s1-group-header" data-action="toggle-group" data-group="ungrouped">
+                          <span class="s1-group-label"><span data-i18n="s1_group_ungrouped">未分组</span> <svg class="s1-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="s1-group-items" data-group-items="ungrouped">
+                          <div class="s1-conversation-item s1-conv-active"><span class="s1-conv-text">你好今天的天气怎么样</span><div class="s1-conv-meta"><span class="s1-conv-time">11:05</span></div></div>
+                        </div>
+                      </div>
+                      <div class="s1-agent-section">
+                        <div class="s1-agent-header">agent &gt;</div>
+                        <div class="s1-agent-grid">
+                          <div class="s1-agent-card" style="background:#FFF4CC"><div class="s1-agent-count" style="color:#D97706">0</div><div class="s1-agent-label" style="color:#92400E" data-i18n="s1_agent_waiting">等待输入</div></div>
+                          <div class="s1-agent-card" style="background:#DFFFE8"><div class="s1-agent-count" style="color:#059669">1</div><div class="s1-agent-label" style="color:#065F46" data-i18n="s1_agent_running">运行中</div></div>
+                          <div class="s1-agent-card" style="background:#E6F7FF"><div class="s1-agent-count" style="color:#2563EB">0</div><div class="s1-agent-label" style="color:#1E3A5F" data-i18n="s1_agent_idle">空闲</div></div>
+                          <div class="s1-agent-card" style="background:#FFE6E6"><div class="s1-agent-count" style="color:#DC2626">0</div><div class="s1-agent-label" style="color:#7F1D1D" data-i18n="s1_agent_error">出错</div></div>
+                        </div>
+                        <div class="s1-desktop-card">
+                          <div class="s1-desktop-header">
+                            <div class="s1-desktop-info">
+                              <div class="s1-desktop-icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                              <span class="s1-desktop-name">DESKTOP-GGK</span>
+                            </div>
+                            <button class="s1-icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+                          </div>
+                          <div class="s1-desktop-status">
+                            <div>
+                               <div class="s1-desktop-status-line"><span class="s1-desktop-running-badge" data-i18n="s1_desktop_running">运行中</span></div>
+                              <div class="s1-desktop-conv">New conversation</div>
+                              <div class="s1-desktop-path">C:\Users\demo</div>
+                            </div>
+                            <span class="s1-desktop-time">11:32</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s1-sidebar-bottom">
+                      <div class="s1-sidebar-account">
+                        <div class="s1-avatar-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                        <span>138****0000</span>
+                      </div>
+                      <button class="s1-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="s1-sidebar-backdrop" data-action="close-sidebar"></div>
+              </div>
+              <div class="s1-bottom-bar">
+                <div class="s1-home-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 场景二 -->
+    <div class="scene-row scene2-row">
+      <div class="scene-text">
+        <h3 class="scene-heading"><span data-i18n="scene2_heading">场景二</span> <span class="scene-dot">&middot;</span> <span data-i18n="scene2_heading_text">移动端与终端交互协同</span></h3>
+        <ul class="scene-list">
+          <li data-i18n="scene2_li1">扫码安全配对，双向通道即刻打通</li>
+          <li data-i18n="scene2_li2">远程操控如临现场，文件互传随拖随到</li>
+          <li data-i18n="scene2_li3">指令直达、结果实时回传，端到端加密护航</li>
+          <li data-i18n="scene2_li4">跨距再远也像在身边办公</li>
+        </ul>
+      </div>
+      <div class="scene-demo" id="scene2-demo">
+        <div class="s2-wrapper">
+          <div class="s2-iphone">
+            <div class="s2-phone-notch"></div>
+            <div class="s2-phone-status"><span>9:41</span><div class="s2-phone-status-r"><svg width="17" height="11" viewBox="0 0 17 11" fill="none"><rect x="0" y="7" width="3.2" height="4" rx="1" fill="#1C1C1E"/><rect x="4.5" y="4.5" width="3.2" height="6.5" rx="1" fill="#1C1C1E"/><rect x="9" y="2" width="3.2" height="9" rx="1" fill="#1C1C1E"/><rect x="13.5" y="0" width="3.2" height="11" rx="1" fill="#1C1C1E"/></svg><svg width="15" height="11" viewBox="0 0 15 11" fill="none"><circle cx="7.5" cy="10" r="1.15" fill="#1C1C1E"/><path d="M4.6 7.3A4.1 4.1 0 0 1 10.4 7.3" stroke="#1C1C1E" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M2.2 5A7.2 7.2 0 0 1 12.8 5" stroke="#1C1C1E" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg><svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke="#1C1C1E" stroke-opacity="0.35" stroke-width="1"/><rect x="2" y="2" width="20" height="9" rx="2" fill="#1C1C1E"/></svg></div></div>
+            <div class="s2-phone-nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg><span>Guguke</span><div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#555" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" fill="#555"/></svg></div></div>
+            <div class="s2-phone-content" id="s2PhoneContent">
+              <div class="s2-chat-title"><h2>New conversation</h2><span>~</span></div>
+              <div class="s2-ai-greeting" style="display:none"><p class="s2-ai-hint" data-i18n="s2_ai_hint">你好！我是 Guguke AI 助手，我可以帮你：</p><p class="s2-ai-sub" data-i18n="s2_ai_sub">- 解释代码</p><p class="s2-ai-main" data-i18n="s2_ai_main">告诉我具体想做什么就行～</p></div>
+              <div class="s2-user-msg" style="display:none">hi 早上好</div>
+              <div class="s2-ai-reply" style="display:none"><p>早上好！🌟 今天有什么我可以帮你的吗？</p><p>需要的话我可以帮你看 <code>remote-office-demo</code> 项目的代码，或者其他任何任务都行～</p></div>
+              <div class="s2-sys-divider" style="display:none">已切换到 local 模式</div>
+              <div class="s2-user-msg" style="display:none">我想查一下今天上海市的天气状况如何？</div>
+              <div class="s2-ai-reply2" style="display:none">我来帮你查一下今天上海的天气。</div>
+              <div class="s2-tools" style="display:none"><div class="s2-tool-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>wttr.in</span></div><div class="s2-tool-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>上海市今天天气 2026年7月3日 温...</span></div></div>
+              <div class="s2-warning" style="display:none"><div class="s2-warn-icon">i</div><p>Permissions shown in terminal only. Reset or send a message to control from app.</p></div>
+              <div class="s2-ai-reply s2-phone-result" style="display:none"><p>上海市天气（2026年7月3日）</p><p>🌡️ 气温：29.1°C（体感 35.9°C），💧 湿度 85%，☁️ 多云，🌬️ 风速 5.4 km/h 西南偏西风</p><p>今日全天：🔺 最高 32.1°C / 🔻 最低 24.7°C，⛈️ 雷阵雨（伴小冰雹），🌧️ 预计降水 11.2 mm</p><p>🦋 闷热湿度大，注意防暑；全天雷阵雨，出门带伞 🌧️</p></div>
+            </div>
+            <div class="s2-settings-overlay" id="s2SettingsOverlay"></div>
+            <div class="s2-settings-sheet" id="s2SettingsSheet">
+              <div class="s2-settings-group">
+                <div class="s2-settings-label" data-i18n="s2_settings_perm">权限模式</div>
+                <div class="s2-settings-option selected" data-mode="默认"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label" data-i18n="s2_perm_default">默认</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-mode="计划模式"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label" data-i18n="s2_perm_plan">计划模式</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-mode="不再询问"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label" data-i18n="s2_perm_noask">不再询问</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-mode="接受编辑"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label" data-i18n="s2_perm_accept">接受编辑</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-mode="Yolo 模式"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label" data-i18n="s2_perm_yolo">Yolo 模式</span></div>
+              </div>
+              <div class="s2-settings-group">
+                <div class="s2-settings-label" data-i18n="s2_settings_model">模型</div>
+                <div class="s2-settings-option selected" data-model="default model"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label">default model</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-model="opus 4.7"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label">opus 4.7</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-model="sonnet 4.6"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label">sonnet 4.6</span></div>
+                <div class="s2-settings-divider"></div>
+                <div class="s2-settings-option" data-model="haiku 4.5"><div class="s2-settings-radio"><div class="s2-settings-radio-dot"></div></div><span class="s2-settings-option-label">haiku 4.5</span></div>
+              </div>
+            </div>
+            <div class="s2-phone-online"><div class="s2-online-dot"></div><span data-i18n="s2_online">在线</span></div>
+            <div class="s2-phone-input"><input type="text" data-i18n="s2_input_placeholder" placeholder="输入消息..." id="s2Input" /></div>
+            <div class="s2-phone-toolbar"><button class="s2-gear-btn" id="s2GearBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="s2-gear-ping" id="s2GearPing" style="display:none"></span></button><button><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button><button class="s2-send-circle" id="s2SendBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button></div>
+          </div>
+          <div class="s2-mac">
+            <div class="s2-mac-titlebar"><div class="s2-mac-dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><div class="s2-mac-tab"><div class="s2-mac-tab-icon">C</div><span id="s2MacTab">Claude Code</span><span class="s2-mac-tab-close">✕</span></div></div>
+            <div class="s2-mac-body" id="s2MacBody">
+              <div class="s2-term-prompt" style="display:none"><span class="s2-t-gray">&gt; </span>hi 早上好</div>
+              <div class="s2-term-response" style="display:none"><span style="color:#f97316">●</span> 早上好！🌟 今天有什么我可以帮你的吗？<div class="s2-term-sub">需要的话我可以帮你看 <span style="color:#60a5fa">remote-office-demo</span> 项目的代码，或者其他任何任务都行～</div></div>
+              <div class="s2-term-prompt2" style="display:none"><span class="s2-t-gray">&gt; </span>我想查一下今天上海市的天气状况如何？</div>
+              <div class="s2-term-tools" style="display:none"><div><span style="color:#f97316">●</span> 我来帮你查一下今天上海的天气。</div><div><span style="color:#ef4444">●</span> Fetch(https://wttr.in/Shanghai?format=j1&lang=zh)<div class="s2-term-sub" style="color:#ef4444">└ Error: Unable to verify if domain wttr.in is safe to fetch.</div></div><div><span style="color:#f97316">●</span> Web Search("上海市今天天气 2026年7月3日 温度 降水")</div></div>
+              <div class="s2-term-perm" style="display:none"><div class="s2-perm-header">Tool use</div><div class="s2-perm-desc">Web Search("上海市今天天气 2026年7月3日 温度 降水")<br/>Claude wants to search the web for: <span style="color:#d4d4d4">上海市今天天气 2026年7月3日 温度 降水</span></div><div class="s2-perm-question">Do you want to proceed?</div><div class="s2-perm-options" id="s2PermA"><div class="s2-perm-opt" data-idx="0"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">1. </span><span class="s2-perm-label">Yes</span></div><div class="s2-perm-opt" data-idx="1"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">2. </span><span class="s2-perm-label">Yes, and don't ask again for Web Search commands in <span>C:\Users\demo</span></span></div><div class="s2-perm-opt" data-idx="2"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">3. </span><span class="s2-perm-label">No</span></div></div></div>
+              <div class="s2-term-exec" style="display:none"><span style="color:#4ade80">✔</span> <span style="color:#6b7280">Executing web search…</span></div>
+              <div class="s2-term-processing" style="display:none"><div><span style="color:#4ade80">+</span> <span style="color:#4ade80">Prestidigitating… <span style="color:#6b7280">(4s · ↑ 79 tokens)</span></span></div><div class="s2-term-sub">└ Tip: Use /theme to change the color theme</div></div>
+              <div class="s2-term-fetch" style="display:none"><div><span style="color:#f97316">●</span> Fetch(https://www.weather.com.cn/weather/101020100.shtml)</div><div class="s2-perm-header">Fetch</div><div class="s2-perm-desc">url: "https://www.weather.com.cn/weather/101020100.shtml", prompt:<br/>"今天上海市的天气状况，包括温度、天气情况、风力、空气质量等"<br/><span style="color:#6b7280">Claude wants to fetch content from www.weather.com.cn</span></div><div class="s2-perm-question">Do you want to allow Claude to fetch this content?</div><div class="s2-perm-options" id="s2PermC"><div class="s2-perm-opt" data-idx="0"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">1. </span><span class="s2-perm-label">Yes</span></div><div class="s2-perm-opt" data-idx="1"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">2. </span><span class="s2-perm-label">Yes, and don't ask again for <span>www.weather.com.cn</span></span></div><div class="s2-perm-opt" data-idx="2"><span class="s2-perm-arrow">&gt;</span><span class="s2-perm-num">3. </span><span class="s2-perm-label">No, and tell Claude what to do differently (esc)</span></div></div></div>
+              <div class="s2-term-result" style="display:none"><div><span style="color:#4ade80">●</span> Fetch(https://api.open-meteo.com/v1/forecast?latitude=31.23...)<div class="s2-term-sub">└ 4.2kb fetched in 843ms</div></div><div class="s2-result-block"><div class="s2-result-title">上海市天气（2026年7月3日）</div><div class="s2-result-sub">当前实况（17:30）</div><div class="s2-result-line">- 🌡️ 气温：29.1°C（体感温度 <b>35.9°C</b>，比较闷热）</div><div class="s2-result-line">- 💧 相对湿度：85%</div><div class="s2-result-line">- ☁️ 天气：多云</div><div class="s2-result-line">- 🌬️ 风速：5.4 km/h，西南偏西风</div><div class="s2-result-sub" style="margin-top:12px">今日全天概况</div><div class="s2-result-line">- 🔺 最高气温：<b>32.1°C</b></div><div class="s2-result-line">- 🔻 最低气温：<b>24.7°C</b></div><div class="s2-result-line">- ⛈️ 全天天气：雷阵雨（伴有小冰雹）</div><div class="s2-result-line">- 🌧️ 预计降水：<b>11.2</b> mm</div><div class="s2-result-sub" style="margin-top:12px">小提醒 🦋</div><div class="s2-result-line">今天上海比较闷热，湿度大、体感接近 <b>36°C</b>，要注意防暑降温。另外全天有雷阵雨预报，出门记得带把伞，尽量避开雷雨时段出行 🌧️</div><div class="s2-result-line" style="margin-top:12px">数据来源：Open-Meteo (https://open-meteo.com/)（上海坐标 31.23°N, 121.47°E）</div></div><div class="s2-term-meta">✳ Brewed for 1m 19s</div></div>
+            </div>
+            <div class="s2-mac-bottom"><span id="s2MacStatus">Esc to cancel · Tab to amend</span></div>
+            <div class="s2-key-hint" id="s2KeyHint"><div class="s2-key-hint-pill"></div></div>
+          </div>
+          <button class="s2-demo-btn" id="s2DemoBtn" data-action="toggle-s2-demo"><span class="s2-demo-icon">&#9654;</span><span class="s2-demo-label" data-i18n="s2_demo_btn">立即演示</span></button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 02 产品特点 -->
+  <section class="func-section" id="sec-product">
+    <div class="sec-features-stars" id="secProductStars"></div>
+    <div class="scene-bg-fx">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <div class="bg-mesh"></div>
+    </div>
+    <h2 class="features-hero-title" data-i18n="sec2_title">一脑多形，全程可视，满足各类需求的 AI 工位</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card1_title">微信扫码，即开即用</div>
+          <div class="product-card-summary" data-i18n-html="card1_summary">·无需下载App<br>·微信扫码直达<br>·随用随走轻量</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-qrcode">
+            <button class="ggk-pv-qr-btn" onclick="ggkShowQRCode(this)">
+              <svg class="ggk-pv-qr-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                <path d="M8 12l3 3 5-5"/>
+              </svg>
+              <span data-i18n="card1_btn">立即体验</span>
+            </button>
+            <div class="ggk-pv-qr-img-wrap">
+              <img src="assets/img/小程序二维码.png" alt="微信小程序二维码" class="ggk-pv-qr-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card2_title">不连终端，也是 AI 助手</div>
+          <div class="product-card-summary" data-i18n-html="card2_summary">·脱离终端可用<br>·日程文档问答<br>·随身待命轻量</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-ai-chat">
+            <div class="ggk-pv-phone">
+              <div class="ggk-pv-phone-notch"></div>
+              <div class="ggk-pv-chat-body">
+                <div class="ggk-pv-chat-bubble ggk-pv-chat-user" data-i18n="card2_user">帮我查下今天的日程</div>
+                <div class="ggk-pv-chat-bubble ggk-pv-chat-ai">
+                  <div class="ggk-pv-chat-ai-dot"></div>
+                  <span data-i18n="card2_ai">今天有3项待办...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card3_title">接上终端，即成操控台</div>
+          <div class="product-card-summary" data-i18n-html="card3_summary">·远程操控如临场<br>·文件互传随拖<br>·指令直达实时回</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-terminal">
+            <div class="ggk-pv-phone-sm">
+              <div class="ggk-pv-phone-notch-sm"></div>
+            </div>
+            <div class="ggk-pv-connect-line">
+              <svg viewBox="0 0 60 20" class="ggk-pv-connect-svg">
+                <line x1="0" y1="10" x2="60" y2="10" stroke="rgba(99,102,241,0.6)" stroke-width="2" stroke-dasharray="4 3"/>
+                <circle cx="30" cy="10" r="3" fill="rgba(99,102,241,0.8)"/>
+              </svg>
+            </div>
+            <div class="ggk-pv-laptop">
+              <div class="ggk-pv-laptop-screen">
+                <div class="ggk-pv-laptop-bar"></div>
+                <div class="ggk-pv-laptop-bar ggk-pv-laptop-bar-short"></div>
+                <div class="ggk-pv-laptop-cursor"></div>
+              </div>
+              <div class="ggk-pv-laptop-base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card4_title">exe 一键安装</div>
+          <div class="product-card-summary" data-i18n-html="card4_summary">·双击运行即装<br>·免配环境免命令<br>·分钟级部署</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-install">
+            <div class="ggk-pv-win-titlebar">
+              <span class="ggk-pv-win-dot ggk-pv-win-dot-close"></span>
+              <span class="ggk-pv-win-dot ggk-pv-win-dot-min"></span>
+              <span class="ggk-pv-win-dot ggk-pv-win-dot-max"></span>
+            </div>
+            <div class="ggk-pv-win-body">
+              <div class="ggk-pv-install-icon">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <rect x="4" y="16" width="24" height="14" rx="2" stroke="rgba(99,102,241,0.7)" stroke-width="1.5"/>
+                  <path d="M16 4v10M12 10l4 4 4-4" stroke="rgba(99,102,241,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="ggk-pv-install-progress-track">
+                <div class="ggk-pv-install-progress-fill"></div>
+              </div>
+              <div class="ggk-pv-install-label" data-i18n="card4_installing">正在安装...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card5_title">四模五权，按需可配</div>
+          <div class="product-card-summary" data-i18n-html="card5_summary">·四模型可选<br>·五权限分级管<br>·自由组合搭配</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-config">
+            <div class="ggk-pv-config-group">
+              <div class="ggk-pv-config-group-label" data-i18n="card5_model">模型</div>
+              <div class="ggk-pv-config-option ggk-pv-config-option-selected">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text">default model</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text">opus 4.7</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text">sonnet 4.6</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text">haiku 4.5</span>
+              </div>
+            </div>
+            <div class="ggk-pv-config-group">
+              <div class="ggk-pv-config-group-label" data-i18n="card5_perm">权限模式</div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text" data-i18n="card5_perm_default">默认</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text" data-i18n="card5_perm_plan">计划模式</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option ggk-pv-config-option-selected">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text" data-i18n="card5_perm_noask">不再询问</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text" data-i18n="card5_perm_accept">接受编辑</span>
+              </div>
+              <div class="ggk-pv-config-divider"></div>
+              <div class="ggk-pv-config-option">
+                <div class="ggk-pv-config-radio"><div class="ggk-pv-config-radio-dot"></div></div>
+                <span class="ggk-pv-config-option-text" data-i18n="card5_perm_yolo">Yolo 模式</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card6_title">运行状态，一览可视</div>
+          <div class="product-card-summary" data-i18n-html="card6_summary">·每步实时呈现<br>·工具耗时可循<br>·过程透明可见</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-status">
+            <div class="ggk-pv-status-grid">
+              <div class="ggk-pv-status-card ggk-pv-status-waiting">
+                <div class="ggk-pv-status-count">0</div>
+                <div class="ggk-pv-status-label" data-i18n="card6_waiting">等待输入</div>
+              </div>
+              <div class="ggk-pv-status-card ggk-pv-status-running">
+                <div class="ggk-pv-status-count">2</div>
+                <div class="ggk-pv-status-label" data-i18n="card6_running">运行中</div>
+              </div>
+              <div class="ggk-pv-status-card ggk-pv-status-idle">
+                <div class="ggk-pv-status-count">1</div>
+                <div class="ggk-pv-status-label" data-i18n="card6_idle">空闲</div>
+              </div>
+              <div class="ggk-pv-status-card ggk-pv-status-error">
+                <div class="ggk-pv-status-count">0</div>
+                <div class="ggk-pv-status-label" data-i18n="card6_error">出错</div>
+              </div>
+            </div>
+            <div class="ggk-pv-status-desktop">
+              <div class="ggk-pv-status-desktop-header">
+                <div class="ggk-pv-status-desktop-info">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  <span>DESKTOP-GGK</span>
+                </div>
+                 <span class="ggk-pv-status-desktop-badge" data-i18n="card6_desktop_running">运行中</span>
+              </div>
+              <div class="ggk-pv-status-steps">
+                <div class="ggk-pv-status-step ggk-pv-status-step-done">
+                  <span class="ggk-pv-status-check">✓</span>
+                   <span data-i18n="card6_read_file">读取文件</span>
+                  <span class="ggk-pv-status-time">0.3s</span>
+                </div>
+                <div class="ggk-pv-status-step ggk-pv-status-step-active">
+                  <span class="ggk-pv-status-spinner"></span>
+                   <span data-i18n="card6_analyze">分析数据</span>
+                  <span class="ggk-pv-status-time">...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card7_title">报告生成，可视化效果</div>
+          <div class="product-card-summary" data-i18n-html="card7_summary">·一句话出报告<br>·自动数据可视<br>·所见即所得</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-report">
+            <div class="ggk-pv-report-chart">
+              <div class="ggk-pv-report-bar" style="--h:60%"></div>
+              <div class="ggk-pv-report-bar" style="--h:85%"></div>
+              <div class="ggk-pv-report-bar ggk-pv-report-bar-highlight" style="--h:45%"></div>
+              <div class="ggk-pv-report-bar" style="--h:70%"></div>
+              <div class="ggk-pv-report-bar" style="--h:55%"></div>
+            </div>
+            <div class="ggk-pv-report-line">
+              <svg viewBox="0 0 100 30" class="ggk-pv-report-line-svg" preserveAspectRatio="none">
+                <polyline points="0,25 20,18 40,22 60,8 80,12 100,5" fill="none" stroke="rgba(99,102,241,0.8)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="ggk-pv-report-labels">
+              <span class="ggk-pv-report-label">Q1</span>
+              <span class="ggk-pv-report-label">Q2</span>
+              <span class="ggk-pv-report-label">Q3</span>
+              <span class="ggk-pv-report-label">Q4</span>
+              <span class="ggk-pv-report-label">Q5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card8_title">深谙芯片，垂类精专</div>
+          <div class="product-card-summary" data-i18n-html="card8_summary">·内置芯片手册<br>·寄存器引脚准<br>·每条回复有据</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-chip">
+            <div class="ggk-pv-chip-search">
+              <svg viewBox="0 0 16 16" class="ggk-pv-chip-search-icon" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
+                <circle cx="7" cy="7" r="4.5"/>
+                <line x1="10.5" y1="10.5" x2="14" y2="14"/>
+              </svg>
+              <span class="ggk-pv-chip-search-text" data-i18n="card8_search">STM32 GPIO寄存器</span>
+            </div>
+            <div class="ggk-pv-chip-table">
+              <div class="ggk-pv-chip-table-header">
+                 <span data-i18n="card8_reg">寄存器</span><span data-i18n="card8_addr">地址</span><span data-i18n="card8_val">值</span>
+              </div>
+              <div class="ggk-pv-chip-table-row">
+                <span>MODER</span><span>0x4002</span><span>0x00FF</span>
+              </div>
+              <div class="ggk-pv-chip-table-row ggk-pv-chip-table-row-hl">
+                <span>OTYPER</span><span>0x4004</span><span>0x0000</span>
+              </div>
+              <div class="ggk-pv-chip-table-row">
+                <span>OSPEED</span><span>0x4008</span><span>0x00C0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-header">
+          <div class="product-card-title" data-i18n="card9_title">token 用量，直观可呈</div>
+          <div class="product-card-summary" data-i18n-html="card9_summary">·实时计量消耗<br>·用量成本清晰<br>·额度一目了然</div>
+        </div>
+        <div class="product-card-visual">
+          <div class="ggk-pv-token">
+            <div class="ggk-pv-token-header">
+              <span class="ggk-pv-token-title" data-i18n="card9_my_token">我的token</span>
+              <svg class="ggk-pv-token-refresh" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            </div>
+            <div class="ggk-pv-token-used">330</div>
+            <div class="ggk-pv-token-bar">
+              <div class="ggk-pv-token-bar-fill"></div>
+            </div>
+            <div class="ggk-pv-token-footer">
+              <span class="ggk-pv-token-remain" data-i18n="card9_remain">170剩余</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 03 适用人群 -->
+
+  <section class="func-section" id="sec-audience">
+    <div class="sec-features-stars" id="secAudienceStars"></div>
+    <div class="scene-bg-fx">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <div class="bg-mesh"></div>
+    </div>
+    <h2 class="features-hero-title" data-i18n="sec3_title">随人成器，因岗赋能，人人可用的 AI 工位</h2>
+    <div class="ggk-marquee-stage">
+      <div class="ggk-marquee-track to-left">
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@alpha_firmware</span>
+              <span class="ggk-user-role" data-i18n="role_firmware">固件工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_firmware">以前调板子必须死守在实验室。现在用 GGK 的远程设备连线，在家甚至在出差路上都能直接抓取串口日志、远程烧录固件，真正实现了软硬件异地协同调试。</p>
+        </div>
+
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@stack_iot_architect</span>
+               <span class="ggk-user-role" data-i18n="role_iot_dev">全栈IOT开发者</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_iot">一个人打通软硬件最头疼的就是查引脚和翻看各种奇葩的芯片 Datasheet。GGK 的智能选型和手册知识库简直就是救星，我的产品原型开发周期至少缩短了 40%。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@fae_core_0x7B</span>
+              <span class="ggk-user-role" data-i18n="role_fae">FAE</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_fae">每天都要帮大量客户做技术选型和替代对标。GGK 百万级的手册库和国产替代一键比对功能非常高效，能瞬间拉出多款 MCU 的关键参数差异，妥妥的生产力神器。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@embedded_sophomore</span>
+              <span class="ggk-user-role" data-i18n="role_student">嵌入式学生</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_student">作为嵌入式方向的研究生，以前看 Datasheet 像看天书。GGK 能直接翻译寄存器含义、生成初始化模板代码，学习效率翻倍，导师都以为我开窍了。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@garage_maker_42</span>
+              <span class="ggk-user-role" data-i18n="role_maker">创客玩家</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_maker">周末在家搞开源硬件项目，手边没有示波器也能用 GGK 远程连实验室设备抓波形、跑测试脚本。一个人就是一支硬件团队的感觉太爽了。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@qa_automation_lead</span>
+              <span class="ggk-user-role" data-i18n="role_qa">测试工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_qa">回归测试要覆盖十几种板卡配置，以前纯靠人力熬。GGK 批量下发测试用例、自动收集日志生成报告，一个晚上跑完一周的量，漏测率直线下降。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@alpha_firmware</span>
+              <span class="ggk-user-role" data-i18n="role_firmware">固件工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_firmware">以前调板子必须死守在实验室。现在用 GGK 的远程设备连线，在家甚至在出差路上都能直接抓取串口日志、远程烧录固件，真正实现了软硬件异地协同调试。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@stack_iot_architect</span>
+              <span class="ggk-user-role" data-i18n="role_iot_dev">全栈IOT开发者</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_iot">一个人打通软硬件最头疼的就是查引脚和翻看各种奇葩的芯片 Datasheet。GGK 的智能选型和手册知识库简直就是救星，我的产品原型开发周期至少缩短了 40%。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@fae_core_0x7B</span>
+              <span class="ggk-user-role" data-i18n="role_fae">FAE</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_fae">每天都要帮大量客户做技术选型和替代对标。GGK 百万级的手册库和国产替代一键比对功能非常高效，能瞬间拉出多款 MCU 的关键参数差异，妥妥的生产力神器。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@embedded_sophomore</span>
+              <span class="ggk-user-role" data-i18n="role_student">嵌入式学生</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_student">作为嵌入式方向的研究生，以前看 Datasheet 像看天书。GGK 能直接翻译寄存器含义、生成初始化模板代码，学习效率翻倍，导师都以为我开窍了。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@garage_maker_42</span>
+              <span class="ggk-user-role" data-i18n="role_maker">创客玩家</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_maker">周末在家搞开源硬件项目，手边没有示波器也能用 GGK 远程连实验室设备抓波形、跑测试脚本。一个人就是一支硬件团队的感觉太爽了。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@qa_automation_lead</span>
+              <span class="ggk-user-role" data-i18n="role_qa">测试工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_qa">回归测试要覆盖十几种板卡配置，以前纯靠人力熬。GGK 批量下发测试用例、自动收集日志生成报告，一个晚上跑完一周的量，漏测率直线下降。</p>
+        </div>
+      </div>
+      <div class="ggk-marquee-track to-right">
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@cyber_lab_phd</span>
+              <span class="ggk-user-role" data-i18n="role_lab">实验室调查人员</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_lab">我们课题组有几十台散落各处的分布式树莓派和边缘工控机节点，以往维护极其头疼。用 GGK 做设备看板和集中编译管理非常丝滑，完全长在极客的审美点上。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@fpga_constraint_v2</span>
+              <span class="ggk-user-role" data-i18n="role_firmware">固件工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_fpga">写 Verilog 和配置约束最烦的就是反复查阅几千页的代码寄存器映射。GGK 的 AI 语境自动出码能直接基于底层硬件上下文生成标准的驱动结构体，极其硬核。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@iot_startup_cto</span>
+              <span class="ggk-user-role" data-i18n="role_hw_cto">硬件创业 CTO</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_hw_cto">我们团队异地办公，硬件在深圳，软件在杭州。通过 GGK 的云端真机在环测试，完美打通了硬件流水线 CI/CD，彻底终结了以往跨城物理邮寄板子联调的低效历史。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@supply_chain_ops</span>
+              <span class="ggk-user-role" data-i18n="role_supply">供应链运营</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_supply">缺料断供时最怕替代料选型拖进度。GGK 的国产替代库能按封装、电气参数一键匹配可Pin-to-Pin替换的器件，并直接导出BOM比对表，选型周报半小时搞定。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id>@devops_pilot_zh</span>
+              <span class="ggk-user-role" data-i18n="role_devops">运维工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_devops">上百台边缘网关要做OTA灰度推送，GGK 的设备分组和批量执行能力让发布像管服务器一样简单，回滚也是一键的事，告警量降了七成。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@pm_hardware_ops</span>
+              <span class="ggk-user-role" data-i18n="role_pm">硬件产品经理</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_pm">评审会上常常被追问某颗料的替代方案和供货风险。GGK 让我现场就能拉出替代矩阵和厂商产能预警，决策有据有底气，不再被研发反向追问到词穷。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@cyber_lab_phd</span>
+              <span class="ggk-user-role" data-i18n="role_lab">实验室调查人员</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_lab">我们课题组有几十台散落各处的分布式树莓派和边缘工控机节点，以往维护极其头疼。用 GGK 做设备看板和集中编译管理非常丝滑，完全长在极客的审美点上。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@fpga_constraint_v2</span>
+              <span class="ggk-user-role" data-i18n="role_fpga">FPGA架构师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_fpga">写 Verilog 和配置约束最烦的就是反复查阅几千页的代码寄存器映射。GGK 的 AI 语境自动出码能直接基于底层硬件上下文生成标准的驱动结构体，极其硬核。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@iot_startup_cto</span>
+              <span class="ggk-user-role" data-i18n="role_hw_cto">硬件创业 CTO</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_hw_cto">我们团队异地办公，硬件在深圳，软件在杭州。通过 GGK 的云端真机在环测试，完美打通了硬件流水线 CI/CD，彻底终结了以往跨城物理邮寄板子联调的低效历史。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@supply_chain_ops</span>
+              <span class="ggk-user-role" data-i18n="role_supply">供应链运营</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_supply">缺料断供时最怕替代料选型拖进度。GGK 的国产替代库能按封装、电气参数一键匹配可Pin-to-Pin替换的器件，并直接导出BOM比对表，选型周报半小时搞定。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@devops_pilot_zh</span>
+              <span class="ggk-user-role" data-i18n="role_devops">运维工程师</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_devops">上百台边缘网关要做OTA灰度推送，GGK 的设备分组和批量执行能力让发布像管服务器一样简单，回滚也是一键的事，告警量降了七成。</p>
+        </div>
+        <div class="ggk-user-card">
+          <div class="ggk-user-meta">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=150&auto=format&fit=crop" class="ggk-user-avatar" alt="Avatar">
+            <div class="ggk-user-info">
+              <span class="ggk-user-id">@pm_hardware_ops</span>
+              <span class="ggk-user-role" data-i18n="role_pm">硬件产品经理</span>
+            </div>
+          </div>
+          <p class="ggk-user-comment" data-i18n="comment_pm">评审会上常常被追问某颗料的替代方案和供货风险。GGK 让我现场就能拉出替代矩阵和厂商产能预警，决策有据有底气，不再被研发反向追问到词穷。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 定价情况 -->
+  <section class="func-section" id="sec-pricing">
+    <div class="sec-features-stars" id="secPricingStars"></div>
+    <div class="scene-bg-fx">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <div class="bg-mesh"></div>
+    </div>
+    <h2 class="features-hero-title" data-i18n="sec4_title">明码标价，按量可选，物有所值的 AI 工位</h2>
+    <div class="price-grid">
+      <div class="ggk-price-card ggk-price-free">
+        <div class="ggk-price-tag">¥0</div>
+        <div class="ggk-price-label" data-i18n="price_free">体验版</div>
+        <div class="ggk-price-metrics">
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.8">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_free_qa">基础聊天问答</span>
+              <span class="ggk-metric-desc" data-i18n="price_free_qa_desc">日常问答与信息查询</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.8">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_free_token">3000万token</span>
+              <span class="ggk-metric-desc" data-i18n="price_free_token_desc">体验版额度</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_free_agent">Agent/1</span>
+              <span class="ggk-metric-desc" data-i18n="price_free_agent_desc">自定义绑定1个Agent</span>
+            </div>
+          </div>
+        </div>
+        <div class="ggk-price-badge" data-i18n="price_free_badge">免费体验</div>
+      </div>
+      <div class="ggk-price-card ggk-price-monthly ggk-price-featured">
+        <div class="ggk-price-featured-tag" data-i18n="price_featured">推荐</div>
+        <div class="ggk-price-tag">¥49<span class="ggk-price-unit">/月</span></div>
+        <div class="ggk-price-label" data-i18n="price_monthly">月付优选方案</div>
+        <div class="ggk-price-metrics">
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_monthly_token">6000万token</span>
+              <span class="ggk-metric-desc" data-i18n="price_monthly_token_desc">首月额度（含体验版3000万）</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_monthly_unlimited">不限频调用</span>
+              <span class="ggk-metric-desc" data-i18n="price_monthly_unlimited_desc">对话调用无频率限制</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_monthly_agent">Agent/3</span>
+              <span class="ggk-metric-desc" data-i18n="price_monthly_agent_desc">自定义绑定3个Agent</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_monthly_key">key配置</span>
+              <span class="ggk-metric-desc" data-i18n="price_monthly_key_desc">支持API Key管理</span>
+            </div>
+          </div>
+        </div>
+        <div class="ggk-price-badge" data-i18n="price_monthly_badge">月付优选</div>
+      </div>
+      <div class="ggk-price-card ggk-price-yearly">
+
+        <div class="ggk-price-tag">¥411.6<span class="ggk-price-unit">/年</span></div>
+        <div class="ggk-price-label" data-i18n="price_yearly">年付超值方案</div>
+        <div class="ggk-price-metrics">
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_yearly_token">3.9亿token</span>
+              <span class="ggk-metric-desc" data-i18n="price_yearly_token_desc">年付额度（含体验版3000万）</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_yearly_unlimited">不限频调用</span>
+              <span class="ggk-metric-desc" data-i18n="price_yearly_unlimited_desc">对话调用无频率限制</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_yearly_agent">Agent 不限</span>
+              <span class="ggk-metric-desc" data-i18n="price_yearly_agent_desc">自定义绑定Agent无上限</span>
+            </div>
+          </div>
+          <div class="ggk-price-metric">
+            <div class="ggk-metric-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+              </svg>
+            </div>
+            <div class="ggk-metric-text">
+              <span class="ggk-metric-value" data-i18n="price_yearly_key">key配置</span>
+              <span class="ggk-metric-desc" data-i18n="price_yearly_key_desc">支持API Key管理</span>
+            </div>
+          </div>
+        </div>
+        <div class="ggk-price-badge" data-i18n="price_yearly_badge">年付超值</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA收尾区域 -->
+  <section class="ggk-cta-section">
+    <div class="wrap">
+      <div class="ggk-cta-box">
+        <h2 data-i18n="cta_title">准备好让 GGK 成为你的 AI 伙伴了吗？</h2>
+        <p data-i18n="cta_desc">不仅回答问题，更能进入你的工作流，帮助你真正完成工作。</p>
+        <button class="cta-primary ggk-btn-cta" data-i18n="cta_btn">立即体验</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- QR Modal -->
+<div class="qr-overlay" id="qrOverlay">
+  <div class="qr-card">
+    <button class="qr-close" id="qrClose">&times;</button>
+    <img class="qr-icon" src="assets/img/logo1-1.png" alt="GGK" />
+    <div class="qr-title" data-i18n="qr_title">扫码立即体验</div>
+    <div class="qr-desc"><span data-i18n="qr_desc_line1">打开微信扫一扫</span><br/><span data-i18n="qr_desc_line2">即可进入 GGK 小程序</span></div>
+    <div class="qr-image-wrap">
+      <img src="assets/img/小程序二维码.png" alt="小程序二维码" />
+    </div>
+    <div class="qr-hint">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span data-i18n="qr_hint">微信扫描二维码即可使用</span>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<footer>
+
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+
+      <h3>Guguke</h3>
+
+      <p data-i18n="footer_slogan">
+        你的全能 AI 伙伴。
+      </p>
+
+    </div>
+
+    <div class="footer-contact">
+
+      <div class="footer-contact-label" data-i18n="footer_contact">联系</div>
+
+      <a class="footer-mail" href="mailto:support@guguke.app">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        <span>support@guguke.app</span>
+      </a>
+
+      <div class="footer-time">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+        <span data-i18n="footer_time">工作日 9:00–18:00</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="assets/js/ggk-i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene1.js"></script>
+<script src="assets/js/scene2.js"></script>
+<script src="assets/js/ggk-cta-fx.js"></script>
+<script src="assets/js/vendor/three.global.js"></script>
+<script src="assets/js/hero-3d.js"></script>
+</body>
+</html>

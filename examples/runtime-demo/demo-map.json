@@ -1,0 +1,32 @@
+{
+  "contract_version": "1.0",
+  "note": "Declares the committed runnable-demo asset structure. Validated by scripts/validate_assets.py so that no referenced file is missing from the repository.",
+  "demo_root": "demo/web",
+  "entry": "demo/web/index.html",
+  "stylesheets": [
+    "assets/css/style.css",
+    "assets/css/scene1.css",
+    "assets/css/scene2.css",
+    "assets/css/ggk-cta-base.css",
+    "assets/css/ggk-cta-fx.css",
+    "assets/css/ggk-footer.css",
+    "assets/css/ggk-nav-patch.css",
+    "assets/css/ggk-product-grid-patch.css",
+    "assets/css/style-pricing-v3-patch.css"
+  ],
+  "scripts": [
+    "assets/js/ggk-i18n.js",
+    "assets/js/main.js",
+    "assets/js/scene1.js",
+    "assets/js/scene2.js",
+    "assets/js/ggk-cta-fx.js",
+    "assets/js/hero-3d.js"
+  ],
+  "vendored_runtime": ["assets/js/vendor/three.global.js"],
+  "images": [
+    "assets/img/logo1-1.png",
+    "assets/img/logo2-1.png",
+    "assets/img/logo3-1.png",
+    "assets/img/小程序二维码.png"
+  ]
+}

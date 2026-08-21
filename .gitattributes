@@ -1,0 +1,6 @@
+# Ensure consistent line endings and language metadata for the bilingual docs.
+* text=auto
+*.html text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf

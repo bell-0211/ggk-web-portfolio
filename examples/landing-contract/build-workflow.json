@@ -1,0 +1,21 @@
+{
+  "contract_version": "1.0",
+  "note": "Declares the AI-toolchain build workflow that produced the committed demo. This documents the process; it is not a claim that any AI tool's output is byte-for-byte reproducible.",
+  "workflow": [
+    "product intent",
+    "information architecture",
+    "interaction spec",
+    "prompt-driven implementation",
+    "runnable demo",
+    "defect diagnosis / refactor",
+    "offline validation and tests",
+    "version record"
+  ],
+  "refactor_trace": [
+    { "stage": "monolith", "description": "single ~188 KB page" },
+    { "stage": "inlined-split", "description": "index.html + css/style.css + js/main.js" },
+    { "stage": "modular", "description": "feature-scoped CSS and JS modules" },
+    { "stage": "integrated", "description": "1:1-rendered scene fidelity integrated into the page" }
+  ],
+  "tooling": ["vanilla HTML/CSS/JS", "vendored Three.js (no CDN runtime)", "Python validation scripts", "untit tests"]
+}

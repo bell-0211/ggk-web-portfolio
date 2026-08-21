@@ -1,0 +1,35 @@
+{
+  "contract_version": "1.0",
+  "note": "Declares the intended interaction anchors of the two scene demos. The scene scripts drive the interaction state machines. Validated for presence in the committed demo by scripts/validate_assets.py.",
+  "scenes": [
+    {
+      "id": "scene1-demo",
+      "name": "mini-program AI assistant auto-demo",
+      "script": "assets/js/scene1.js",
+      "anchors": [
+        "s1-demo-mask",
+        "s1-demo-btn",
+        "s1-chat-screen",
+        "s1-typing-indicator",
+        "s1-ai-response",
+        "s1-sidebar-overlay",
+        "s1-desktop-card"
+      ]
+    },
+    {
+      "id": "scene2-demo",
+      "name": "phone <-> terminal collaboration state machine",
+      "script": "assets/js/scene2.js",
+      "anchors": [
+        "s2-demo-btn",
+        "s2-phone-content",
+        "s2-mac-body",
+        "s2-settings-sheet",
+        "s2Input",
+        "s2SendBtn",
+        "s2GearBtn"
+      ]
+    }
+  ],
+  "shared_controls": ["lang-toggle", "cta-btn", "cta-primary", "navbar-nav"]
+}

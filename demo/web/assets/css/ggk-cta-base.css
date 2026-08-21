@@ -1,0 +1,79 @@
+.ggk-cta-section {
+  padding: 120px 0 0;
+}
+
+.ggk-cta-box {
+  background: #111827;
+  color: #fff;
+  text-align: center;
+  border-radius: 42px;
+  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ggk-cta-box h2 {
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.ggk-cta-box p {
+  color: #94A3B8;
+  margin: 28px auto 0;
+  max-width: 640px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.ggk-btn-cta {
+  margin-top: 48px;
+  padding: 22px 48px;
+  font-size: 22px;
+  background: linear-gradient(135deg, var(--primary, #6366f1), #A78BFA);
+  border-radius: 999px;
+  box-shadow: 0 4px 24px rgba(124, 92, 240, .35);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.ggk-btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(124, 92, 240, .45);
+}
+
+@media (max-width: 768px) {
+  .ggk-cta-section {
+    padding: 80px 0 0;
+  }
+  .ggk-cta-box {
+    padding: 64px 22px;
+    border-radius: 28px;
+  }
+  .ggk-cta-box h2 {
+    font-size: clamp(19px, 5.2vw, 26px);
+    letter-spacing: -.6px;
+    white-space: normal;
+  }
+  .ggk-btn-cta {
+    padding: 18px 36px;
+    font-size: 18px;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ggk-cta-box h2 {
+    font-size: clamp(15px, 4.4vw, 19px);
+    letter-spacing: -.4px;
+  }
+}

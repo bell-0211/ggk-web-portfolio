@@ -1,0 +1,4 @@
+# This portfolio's validation scripts and tests use only the Python standard library,
+# so there are no external packages required. This file exists for parity with the
+# upstream portfolio's convention and to let CI install explicitly even if nothing is
+# pinned here.

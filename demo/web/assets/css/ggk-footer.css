@@ -1,0 +1,95 @@
+.ggk-cta-section .wrap,
+footer .wrap {
+  width: min(1600px, 92vw);
+  margin: auto;
+  max-width: 100%;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 64px 0;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(129, 140, 248, .2) 30%,
+    rgba(6, 182, 212, .2) 70%,
+    transparent
+  ) 1;
+}
+
+.footer-brand h3 {
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #818cf8, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  color: #94A3B8;
+  font-size: 15px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94A3B8;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.footer-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  width: fit-content;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+.footer-mail svg {
+  color: #818cf8;
+  flex-shrink: 0;
+}
+
+.footer-mail:hover {
+  color: #818cf8;
+}
+
+.footer-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #94A3B8;
+}
+
+.footer-time svg {
+  color: #06b6d4;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: left;
+  }
+}
