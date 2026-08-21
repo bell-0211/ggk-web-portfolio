@@ -4,7 +4,7 @@
 
 [English](README.md) · [作品集正文](docs/portfolio.md) · [静态展示页源码](docs/index.html)
 
-**汪楠 · 2027 届秋招 · AI 产品经理 / Prompt Engineering**
+**汪楠 · 2027 届秋招 · AI 产品经理**
 
 作品集整理周期：2026 年 6 月—8 月 · GitHub：[@bell-0211](https://github.com/bell-0211)
 
